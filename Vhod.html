@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход\Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="vhod.css">
+<script type="text/javascript" src="vhod.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-bth" onclick="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li>Меню</li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="Cramm.html">Грамматика</a></li>
+          <li><a href="Audio.html">Аудио и видео</a></li>
+        <li><a href="test.html">Тест</a></li>
+        </ul>
+       </div>
+
+    <form class="transparent">
+        <div class="form-inner">
+        <h3>Вход</h3>
+        <label for="username">Имя пользователя</label>
+        <input type="text" id="username">
+        <label for="password">Пароль</label>
+        <input id="password" type="password">
+        <input type="checkbox" id="custom-checkbox">
+        <label for="custom-checkbox">Запомнить меня</label>
+        <input type="submit" id="addButton" value="Отправить">
+        </div>
+        </form>
+        <ul id = "clist"></ul>
+        <script>
+      function openMenu() {
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+     </script>
+        
+</body>
+</html>
